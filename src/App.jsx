@@ -1,4 +1,3 @@
-import { Card, CardHeader } from "@nextui-org/react";
 import ImageBg from "./assets/image/bg.jpg";
 import Home from "./components/Home";
 import RegisterFormStepOne from "./components/RegisterFormStepOne";
@@ -11,7 +10,6 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 export default function App() {
   // State to manage the current step
   const [currentStep, setCurrentStep] = useState(0);
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
   const [userInformation, setUserInformation] = useState({
     type: "",
     fullName: "",
